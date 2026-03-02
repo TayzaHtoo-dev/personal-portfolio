@@ -3,81 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Tayza Htoo | Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">tayza</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">home</a></li>
+                <li><a href="#about" class="nav-link">about</a></li>
+                <li><a href="#skills" class="nav-link">skills</a></li>
+                <li><a href="#projects" class="nav-link">projects</a></li>
+                <li><a href="#contact" class="nav-link">contact</a></li>
             </ul>
-        </nav>
-    </header>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>A brief introduction about myself.</p>
-    </section>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn red"></span>
+                                <span class="btn yellow"></span>
+                                <span class="btn green"></span>
+                            </div>
+                            <div class="terminal-title">~/portfolio</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="prompt">$</span>
+                                <span class="command">whoami</span>
+                            </div>
+                            <div class="terminal-output">
+                                <h1 class="name-output">Tayza Htoo</h1>
+                                <p class="role-output">Frontend Developer</p>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="prompt">$</span>
+                                <span class="command typing-animation">cat about.txt</span>
+                                <span class="cursor-blink">|</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-        </ul>
-    </section>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-number">01.</span>
+                    About Me
+                </h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Hey there! I'm a passionate frontend developer who loves creating beautiful, interactive user experiences. I specialize in turning designs into pixel-perfect, responsive websites.</p>
+                        <p>When I'm not coding, you'll find me exploring new CSS techniques, experimenting with animations, or staying up-to-date with the latest frontend frameworks and design trends.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">15+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">∞</span>
+                                <span class="stat-label">Cups of Coffee</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="code-block">
+                            <div class="code-header">
+                                <span>developer.js</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="keyword">const</span> <span class="variable">developer</span> = {</div>
+                                <div class="code-line">  <span class="property">name</span>: <span class="string">"Tayza Htoo"</span>,</div>
+                                <div class="code-line">  <span class="property">role</span>: <span class="string">"Frontend Developer"</span>,</div>
+                                <div class="code-line">  <span class="property">passion</span>: <span class="string">"UI/UX & Animations"</span>,</div>
+                                <div class="code-line">  <span class="property">coffee</span>: <span class="boolean">true</span></div>
+                                <div class="code-line">};</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://project1.com">Project 1</a></li>
-            <li><a href="https://project2.com">Project 2</a></li>
-            <li><a href="https://project3.com">Project 3</a></li>
-        </ul>
-    </section>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-number">02.</span>
+                    Tech Stack
+                </h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Core Technologies</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">Web Accessibility</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Sass/SCSS</span>
+                            <span class="skill-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Design</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Webpack</span>
+                            <span class="skill-tag">Vite</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe XD</span>
+                            <span class="skill-tag">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li>Job Title at Company (Year - Year)</li>
-            <li>Job Title at Company (Year - Year)</li>
-        </ul>
-    </section>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-number">03.</span>
+                    Featured Projects
+                </h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Interactive Dashboard</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live</a>
+                                <a href="#" class="project-link">Code</a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            A responsive data visualization dashboard with interactive charts, smooth animations, and real-time updates.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">CSS Grid</span>
+                            <span class="tech-tag">Framer Motion</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>E-Commerce UI</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live</a>
+                                <a href="#" class="project-link">Code</a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Modern e-commerce interface with product filtering, shopping cart animations, and mobile-first responsive design.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Vuex</span>
+                            <span class="tech-tag">GSAP</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Portfolio Website</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live</a>
+                                <a href="#" class="project-link">Code</a>
+                            </div>
+                        </div>
+                        <p class="project-description">
+                            Creative portfolio website with CSS animations, smooth scrolling, and interactive elements for enhanced user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SCSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>Degree at Institution (Year)</li>
-            <li>Degree at Institution (Year)</li>
-        </ul>
-    </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="section-number">04.</span>
+                    Get In Touch
+                </h2>
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p>I'm always excited to work on new frontend projects and collaborate with designers and developers. Let's create something amazing together!</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-label">Email:</span>
+                                <a href="mailto:tayza@example.com" class="contact-link">tayzahtoo49@example.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">GitHub:</span>
+                                <a href="https://github.com/tayza" class="contact-link">github.com/tayza</a>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">LinkedIn:</span>
+                                <a href="https://linkedin.com/in/tayza" class="contact-link">linkedin.com/in/tayza</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form class="form">
+                            <div class="form-group">
+                                <input type="text" id="name" required>
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" required></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Certification Name (Year)</li>
-            <li>Certification Name (Year)</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: your.email@example.com</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Tayza Htoo</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Tayza Htoo. Built with ❤️ and lots of ☕</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
